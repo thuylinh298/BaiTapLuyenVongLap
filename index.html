@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Queen Đặng Thuỳ Linh</title>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/icon.png" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Tabs CSS-->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css"
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+      <body>
+        <div class="tabbed">
+          <input type="radio" name="tabs" id="tab-nav-1" checked />
+          <label for="tab-nav-1">Đáp Án 1</label>
+          <input type="radio" name="tabs" id="tab-nav-2" />
+          <label for="tab-nav-2">Đáp Án 2</label>
+          <input type="radio" name="tabs" id="tab-nav-3" />
+          <label for="tab-nav-3">Đáp Án 3</label>
+          <input type="radio" name="tabs" id="tab-nav-4" />
+          <label for="tab-nav-4">Đáp Án 4</label>
+          <input type="radio" name="tabs" id="tab-nav-5" />
+          <label for="tab-nav-5">Đáp Án 5</label>
+          <div class="tabs">
+            <div>
+              <h2>Đáp Án 1</h2>
+              <p>
+                Bài 1: Tìm số nguyên dương n nhỏ nhất sao cho: 1 + 2 + 3 + ... + n > 10000
+              </p>
+              <br />
+              <button type="button" id="button1" onclick="timSoNhoNhat()">
+                <span class="btn__txt">Đáp Án</span>
+              </button>
+              <br />
+              <div
+                    class="alert alert-success"
+                    role="alert"
+                    style="background-color: #4ec6de; margin-top: 25px;"
+                    id="ketQua"
+                  >
+              </div>
+            </div>
+            <div>
+              <h2>Đáp Án 2</h2>
+              <p>
+                Bài 2: Viết chương trình nhập vào 2 số x,n. Tính tổng: S(n) = x+ x^2 + x^3 + ... + x^n.
+              </p>
+              <br />
+                <input type="number" class="form__input" id="2num1" placeholder="Nhập x" required="" />
+                <label for="name" class="form__label">Nhập x</label>
+                <input type="number" class="form__input" id="2num2" placeholder="Nhập n" required="" />
+                <label for="name" class="form__label">Nhập n</label>
+                <br />
+                <button type="button" id="button2" onclick="tinhTong()">
+                  <span class="btn__txt">Đáp Án</span>
+                </button>
+                <br />
+                <div
+                    class="alert alert-success"
+                    role="alert"
+                    style="background-color: #4ec6de; margin-top: 25px;"
+                    id="ketQua-2"
+                  >
+                  </div>
+            </div>
+            <div>
+              <h2>Đáp Án 3</h2>
+              <p>
+                Bài 3: Cho phép người dùng nhập vào 1 số. Tính giai thừa số đó.
+              </p>
+              <br />
+                <input type="number" class="form__input" id="3num1" placeholder="Nhập vào một số bất kỳ" required="" />
+                <label for="name" class="form__label">Nhập vào một số bất kỳ</label>
+                <br />
+                <button type="button" id="button3" onclick="tinhGiaiThua()">
+                  <span class="btn__txt">Đáp Án</span>
+                </button>
+                <br />
+                <div
+                    class="alert alert-success"
+                    role="alert"
+                    style="background-color: #4ec6de; margin-top: 25px;"
+                    id="ketQua-3"
+                  >
+                  </div>
+            </div>
+            <div>
+              <h2>Đáp Án 4</h2>
+              <p>
+                Bài 4: Hãy viết chương trình khi click vào button sẽ in ra 10 thẻ div. Nếu div nào vị trí chẵn thì background màu đỏ và lẻ thì background màu xanh
+              </p>
+                <br />
+                <button type="button" id="button4" onclick="inThe()">
+                  <span class="btn__txt">Đáp Án</span>
+                </button>
+                <br />
+                <div
+                    class="alert alert-success"
+                    role="alert"
+                    style="background-color: #4ec6de; margin-top: 25px;"
+                    id="ketQua-4"
+                  >
+                  </div>
+            </div>
+            <div>
+              <h2>Đáp Án 5</h2>
+              <p>
+                Bài 5: Cho phép người dùng nhập vào 1 số. In ra các số nguyên tố từ 1 -> số đó
+              </p>
+              <br />
+                <input type="number" class="form__input" id="5num1" placeholder="Nhập vào một số bất kỳ" required="" />
+                <label for="name" class="form__label">Nhập vào một số bất kỳ</label>
+                <br />
+                <button type="button" id="button5" onclick="inSNT()">
+                  <span class="btn__txt">Đáp Án</span>
+                </button>
+                <br />
+                <div
+                    class="alert alert-success"
+                    role="alert"
+                    style="background-color: #4ec6de; margin-top: 25px;"
+                    id="ketQua-5"
+                  >
+                  </div>
+            </div>
+          </div>
+        </div>
+  </body>
+
+  <footer></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="./js/main.js"></script>
+</html>
